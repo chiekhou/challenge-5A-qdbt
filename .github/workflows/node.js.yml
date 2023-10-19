@@ -3,7 +3,7 @@ name: Docker Build and Test
 on:
   push:
     branches:
-      - dev
+      - feature/workflowtest
 
 jobs:
   build-and-test:
