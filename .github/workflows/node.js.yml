@@ -14,12 +14,12 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build and Test Front-end Docker Image
-      working-directory: ./Front
+      working-directory: Front
       run: |
         docker build -t front-app .
         docker run front-app npm test
 
     - name: Build and Test Back-end Docker Image
-      working-directory: ./Back
+      working-directory: Back
       run: |
         docker compose up -d
